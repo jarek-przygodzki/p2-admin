@@ -34,6 +34,9 @@
 			  <product>
 			    <id>org.eclipse.equinox.p2.admin.rcp.product</id>
 			    <rootFolder>p2-admin</rootFolder>
+				<rootFolders>
+					<macosx>Eclipse.app</macosx>
+				</rootFolders>
 			    <archiveFileName>p2-admin-${unqualifiedVersion}</archiveFileName>
 			  </product>
 			</products>
@@ -48,6 +51,9 @@
 	          <goals>
 	            <goal>materialize-products</goal>
 	          </goals>
+	          <configuration>
+              <profile>SDKProfile</profile>
+            </configuration>
 	        </execution>
 	        <execution>
 	          <id>archive-products</id>
