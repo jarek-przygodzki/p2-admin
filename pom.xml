@@ -9,21 +9,14 @@
   <packaging>pom</packaging>
 
   <properties>
-    <tycho-version>0.23.0-SNAPSHOT</tycho-version>
-    <tycho-extras-version>0.23.0-SNAPSHOT</tycho-extras-version>
+    <tycho-version>0.23.1</tycho-version>
+    <tycho-extras-version>0.23.1</tycho-extras-version>
   </properties>
 
   <modules>
   	<module>org.eclipselabs.equinox.p2.moreapps</module>
   	<module>org.eclipselabs.equinox.p2.admin.product</module>
   </modules>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>tycho-snapshots</id>
-      <url>https://repo.eclipse.org/content/repositories/tycho-snapshots/</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <repositories>
 	<repository>
